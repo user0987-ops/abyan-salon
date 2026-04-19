@@ -2,13 +2,18 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Abyan</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         .menu-list { max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .menu-category { margin-bottom: 30px; }
-        .menu-category-title { font-size: 1.1rem; color: var(--accent-color); font-weight: bold; border-left: 4px solid var(--accent-color); padding-left: 12px; margin-bottom: 15px; }
+        .menu-category { margin-bottom: 40px; }
+        .menu-category-title { font-size: 1.3rem; color: var(--accent-color); font-weight: bold; border-bottom: 2px solid var(--accent-color); padding-bottom: 8px; margin-bottom: 20px; text-align: center; }
+        .menu-sub-title { font-weight: bold; margin-top: 20px; color: #555; }
+        .menu-desc { font-size: 0.8rem; color: #888; margin-bottom: 10px; }
         .menu-row { display: flex; justify-content: space-between; border-bottom: 1px dotted #ccc; padding-bottom: 5px; margin-bottom: 10px; }
+        .option-header { text-align: center; margin: 30px 0 15px; font-weight: bold; background: #fdfaf8; padding: 10px; }
+        .menu-footer-note { font-size: 0.8rem; color: #666; background: #f9f9f9; padding: 10px; margin-top: 15px; text-align: center; }
     </style>
 </head>
 <body>
@@ -28,56 +33,29 @@
     <section>
         <div class="container">
             <div class="section-title"><h2>Menu</h2></div>
-            
             <div class="menu-list">
-                
                 <div class="menu-category">
                     <div class="menu-category-title">FACIAL</div>
-                    <div class="menu-row"><span class="menu-name">＊フェイシャル</span><span class="menu-price">¥3,800</span></div>
-                    <div class="menu-row"><span class="menu-name">＊毛穴ケア</span><span class="menu-price">¥3,800</span></div>
-                    <div class="menu-row"><span class="menu-name">＊リボーニング（肌育）</span><span class="menu-price">¥3,000</span></div>
-                    <div class="menu-row"><span class="menu-name">＊顔筋リンパ（小顔マッサージ）</span><span class="menu-price">¥4,000</span></div>
+                    <div class="menu-row"><span>＊フェイシャル</span><span>¥3,800</span></div>
+                    <div class="menu-row"><span>＊毛穴ケア</span><span>¥3,800</span></div>
+                    <div class="menu-row"><span>＊リボーニング（肌育）</span><span>¥3,000</span></div>
+                    <div class="menu-row"><span>＊顔筋リンパ（小顔マッサージ）</span><span>¥4,000</span></div>
 
-                    <div class="option-header">
-                        ＝ オプションメニュー ＝
-                        <span>＊上記メニューに追加いただけます</span>
-                    </div>
-                    <div class="menu-row"><span class="menu-name">・デコルテマッサージ</span><span class="menu-price">¥1,000</span></div>
-                    <div class="menu-row"><span class="menu-name">・顔筋リンパ（小顔マッサージ）</span><span class="menu-price">¥2,200</span></div>
-                    <div class="menu-row"><span class="menu-name">・毛穴ケア</span><span class="menu-price">¥1,800</span></div>
-                    <div class="menu-row"><span class="menu-name">・リボーニング</span><span class="menu-price">¥1,800</span></div>
-                    <div class="menu-row"><span class="menu-name">・フォト</span><span class="menu-price">¥2,000</span></div>
-                    <div class="menu-row"><span class="menu-name">・イオン導入</span><span class="menu-price">¥1,000</span></div>
-                    <div class="menu-row"><span class="menu-name">・肌別スペシャルパック</span><span class="menu-price">¥1,000〜</span></div>
+                    <div class="option-header">＝ オプションメニュー ＝</div>
+                    <div class="menu-row"><span>・デコルテマッサージ</span><span>¥1,000</span></div>
+                    <div class="menu-row"><span>・顔筋リンパ（小顔マッサージ）</span><span>¥2,200</span></div>
+                    <div class="menu-row"><span>・フォト</span><span>¥2,000</span></div>
                 </div>
 
                 <div class="menu-category">
                     <div class="menu-category-title">BODY CARE</div>
-                    
-                    <div class="menu-sub-title">ドライ・ほぐし</div>
-                    <div class="menu-desc">（服を着たままできます）</div>
-                    <div class="menu-row"><span class="menu-name">30分</span><span class="menu-price">¥2,000</span></div>
-                    <div class="menu-row"><span class="menu-name">60分</span><span class="menu-price">¥3,000</span></div>
-                    <div class="menu-row"><span class="menu-name">90分</span><span class="menu-price">¥4,500</span></div>
-
-                    <div class="menu-sub-title">オイル・リンパ</div>
-                    <div class="menu-row"><span class="menu-name">30分</span><span class="menu-price">¥3,000</span></div>
-                    <div class="menu-row"><span class="menu-name">90分</span><span class="menu-price">¥8,000</span></div>
-                    <div class="menu-row"><span class="menu-name">150分</span><span class="menu-price">¥14,000</span></div>
-
-                    <div class="menu-sub-title">痩身・ダイエット・ライン作り</div>
+                    <div class="menu-sub-title">痩身・ダイエット</div>
                     <div class="menu-desc">（キャビテーション＋ラジオ波＋EMS）</div>
-                    <div class="menu-row"><span class="menu-name">30分</span><span class="menu-price">¥3,000</span></div>
-                    <div class="menu-row"><span class="menu-name">60分</span><span class="menu-price">¥5,800</span></div>
-                    <div class="menu-row"><span class="menu-name">4回</span><span class="menu-price">¥22,000</span></div>
-                    <div class="menu-row"><span class="menu-name">8回</span><span class="menu-price">¥40,000</span></div>
-                    <div class="menu-row"><span class="menu-name">12回</span><span class="menu-price">¥59,000</span></div>
-                    
-                    <div class="menu-footer-note">
-                        ※各コース30分は部分集中（背中・お腹・足）の施術をおすすめします
-                    </div>
+                    <div class="menu-row"><span>30分</span><span>¥3,000</span></div>
+                    <div class="menu-row"><span>60分</span><span>¥5,800</span></div>
+                    <div class="menu-row"><span>4回</span><span>¥22,000</span></div>
+                    <div class="menu-footer-note">※30分は部分集中（背中・お腹・足）がおすすめ</div>
                 </div>
-
             </div>
         </div>
     </section>
