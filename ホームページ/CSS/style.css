@@ -1,0 +1,123 @@
+/* 基本設定 */
+:root {
+    --primary-color: #f7f3f0;
+    --accent-color: #c5a992;
+    --line-color: #06C755;
+    --text-color: #4a4a4a;
+    --white: #ffffff;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+.container {
+    width: 92%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ヘッダー */
+header {
+    background-color: var(--white);
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 両端に配置 */
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--accent-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* ナビゲーション */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* セクション共通 */
+section {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+section:nth-child(even) {
+    background-color: var(--primary-color);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 1.6rem;
+    color: var(--accent-color);
+    display: inline-block;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 8px;
+}
+
+/* フッター */
+footer {
+    background-color: var(--accent-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.8rem;
+}
+
+/* 共有ボタン */
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.cta-button.line {
+    background-color: var(--line-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    nav { display: none; } /* 簡易化のためスマホではナビを隠すかハンバーガーへ */
+    .logo { font-size: 1.4rem; }
+}
